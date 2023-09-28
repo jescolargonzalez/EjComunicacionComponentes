@@ -14,6 +14,4 @@ export class Empleado {
     this.salario = salario;
   }
 
-
-
 }

@@ -6,12 +6,14 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./count-empleados.component.css'],
 })
 export class CountEmpleadosComponent implements OnInit {
+
   @Input() todos: number;
   @Input() masculino: number;
   @Input() femenino: number;
   @Output() countRadioButtonChange = new EventEmitter<string>();
 
   radioButtonSeleccionado = 'Todos';
+
   constructor() {
     this.todos = 0;
     this.masculino = 0;
