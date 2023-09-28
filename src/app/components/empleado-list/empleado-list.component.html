@@ -1,0 +1,36 @@
+<div class="container">
+  <hr />
+
+  <div class="card">
+    <div class="card-body">
+      <app-count-empleados></app-count-empleados>
+    </div>
+  </div>
+
+  <div class="card mt-3">
+    <div class="card-body">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Sexo</th>
+            <th>Salario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of listEmpleados"><!-- directiva para cargar datos en tabla usar Nombre array-->
+            <td>{{ item.num }}</td>
+            <td>{{ item.nombre }}</td>
+            <td>{{ item.apellido }}</td>
+            <td>{{ item.sexo }}</td>
+            <td>{{ item.salario }}€/s</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <hr />
+</div>
